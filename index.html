@@ -16,6 +16,15 @@ $(document).ready(function(){
   });
 });
 </script>
+  
+  <div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/tr_TR/sdk.js#xfbml=1&version=v3.2';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
 
   <meta name="google-site-verification" content="4Ax74LRJShZhmBu2PeANtSRnhPzkTHVcjh6suMxUfs0" />
 
@@ -294,12 +303,14 @@ h1.customfont {
 
   </div>
 
+  <div class="fb-share-button" data-href="https://edumak.github.io/tr" data-layout="button" data-size="large" data-mobile-iframe="true"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fedumak.github.io%2Ftr&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Paylaş</a></div>
+  
   <!-- Contact Section -->
   <div class="w3-container w3-padding-32" id="contact">
     <h3 class="w3-border-bottom w3-border-light-grey w3-padding-16">İletişim</h3>
     <p>Mevcut dersler, ders talebi, sınava destek, soru çözümü, yarışmaya hazırlık ile ilgili bize her zaman yazabilirsiniz: </p>
 
-   <form id="gform" method="POST"
+    <form id="gform" method="POST"
       action="https://script.google.com/macros/s/AKfycbyu-mEnrL97e0ta52tlvos0BHpS1qwHCb1P2tFO5g/exec">
       <input class="w3-input w3-border" type="text" placeholder="İsim" required name="Name">
       <input class="w3-input w3-section w3-border" type="text" placeholder="E-mail" required name="Email">
